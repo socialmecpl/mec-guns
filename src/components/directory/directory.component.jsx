@@ -8,32 +8,32 @@ export default class Directory extends React.Component {
         this.state = {
             sections: [
                 {
-                    title: 'Arc',
+                    title: 'Arc Spray',
                     imageUrl: 'https://www.mecpl.com/images/arcjet-96-gun.jpg',
                     id: 1,
                     linkUrl: 'arc'
                   },
                   {
-                    title: 'plasma',
+                    title: 'Plasma Spray',
                     imageUrl: 'https://www.mecpl.com/images/plasma-spray-system-01.jpg',
                     id: 2,
                     linkUrl: 'plasma'
                   },
                   {
-                    title: 'hvof',
+                    title: 'hvof Spray',
                     imageUrl: 'https://www.mecpl.com/images/hybrid-attachment.jpg',
                     id: 3,
                     linkUrl: 'hvof'
                   },
                   {
-                    title: 'flame',
+                    title: 'flame Spray',
                     imageUrl: 'https://www.mecpl.com/images/rodojet-9810-gun.jpg',
                     size: 'large',
                     id: 4,
                     linkUrl: 'flame'
                   },
                   {
-                    title: 'cold',
+                    title: 'cold spray',
                     imageUrl: 'https://www.mecpl.com/images/dymet-model-423.jpg',
                     size: 'large',
                     id: 5,
