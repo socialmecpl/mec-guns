@@ -10,29 +10,34 @@ export default class Directory extends React.Component {
                 {
                     title: 'Arc',
                     imageUrl: 'https://www.mecpl.com/images/arcjet-96-gun.jpg',
-                    id: 1
+                    id: 1,
+                    linkUrl: 'arc'
                   },
                   {
                     title: 'plasma',
                     imageUrl: 'https://www.mecpl.com/images/plasma-spray-system-01.jpg',
-                    id: 2
+                    id: 2,
+                    linkUrl: 'plasma'
                   },
                   {
                     title: 'hvof',
                     imageUrl: 'https://www.mecpl.com/images/hybrid-attachment.jpg',
-                    id: 3
+                    id: 3,
+                    linkUrl: 'hvof'
                   },
                   {
                     title: 'flame',
                     imageUrl: 'https://www.mecpl.com/images/rodojet-9810-gun.jpg',
                     size: 'large',
-                    id: 4
+                    id: 4,
+                    linkUrl: 'flame'
                   },
                   {
                     title: 'cold',
                     imageUrl: 'https://www.mecpl.com/images/dymet-model-423.jpg',
                     size: 'large',
-                    id: 5
+                    id: 5,
+                    linkUrl: 'cold'
                   }
             ]
         }
@@ -41,8 +46,8 @@ export default class Directory extends React.Component {
     render() {
         return (
             <div className='directory-menu'>
-                {this.state.sections.map(({ title, imageUrl, id, size }) => (
-                <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+                {this.state.sections.map(({ id, ...otherSectionProps }) => (
+                <MenuItem key={id} {...otherSectionProps} />
                 ))}
             </div>
         )
