@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    arc: {
       id: 1,
       title: 'Arc',
       routeName: 'arc',
@@ -30,7 +30,7 @@ const SHOP_DATA = [
         },
       ]
     },
-    {
+    plasma: {
       id: 2,
       title: 'Plasma',
       routeName: 'plasma',
@@ -73,7 +73,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    hvof: {
       id: 3,
       title: 'HVOF',
       routeName: 'hvof',
@@ -110,7 +110,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+    flame: {
       id: 4,
       title: 'Flame',
       routeName: 'flame',
@@ -153,7 +153,7 @@ const SHOP_DATA = [
         },
       ]
     },
-    {
+    cold: {
       id: 5,
       title: 'Cold',
       routeName: 'cold',
@@ -166,5 +166,5 @@ const SHOP_DATA = [
         }
       ]
     }
-  ];
+};
   export default SHOP_DATA;
